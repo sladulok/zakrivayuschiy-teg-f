@@ -38,10 +38,6 @@
   background-size: cover;
 }
 
-.content {
-  background-color: var(--background-color);
-}
-
 .header {
   display: flex;
   flex-direction: column;
@@ -131,6 +127,7 @@
   display: flex;
   flex-direction: column;
   gap: 50px;
+  background-color: var(--background-color);
 }
 
 .cards {
