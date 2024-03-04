@@ -22,19 +22,19 @@
   color: var(--accent-color);
   background-color: var(--background-color);
   background-image: repeating-linear-gradient(
-    90deg,
-    var(--background-gradient-color-1) 0 2px,
-    transparent 2px 4px
-  ),
-  repeating-linear-gradient(
-    0deg,
-    var(--background-gradient-color-1) 0 2px,
-    transparent 2px 4px
-  ),
-  linear-gradient(
-    var(--background-gradient-color-2),
-    var(--background-gradient-color-3)
-  );
+      90deg,
+      var(--background-gradient-color-1) 0 2px,
+      transparent 2px 4px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      var(--background-gradient-color-1) 0 2px,
+      transparent 2px 4px
+    ),
+    linear-gradient(
+      var(--background-gradient-color-2),
+      var(--background-gradient-color-3)
+    );
   background-size: cover;
 }
 
@@ -52,7 +52,6 @@
   text-transform: uppercase;
   background-color: var(--background-color);
   padding: clamp(7.5rem, 7.1479rem + 1.5023vw, 8.5rem) 0px 24px;
-
 }
 
 .header__logo {
@@ -125,7 +124,7 @@
   width: 100%;
   object-fit: cover;
   object-position: center;
-  Height: clamp(23.4375rem, 10.5854rem + 54.8357vw, 59.9375rem);;
+  height: clamp(23.4375rem, 10.5854rem + 54.8357vw, 59.9375rem);
 }
 
 .content {
