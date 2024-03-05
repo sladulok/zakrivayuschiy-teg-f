@@ -14,6 +14,7 @@
     --background-gradient-color-2: #e7e7e7;
     --background-gradient-color-3: #1a1a1a;
     --color-heart: #f00;
+    --opacity-background: #000;
   }
   
   :root.theme-dark {
@@ -26,6 +27,7 @@
     --background-gradient-color-2: #007f0c;
     --background-gradient-color-3: #004306;
     --color-heart: #f00;
+    --opacity-background: #000;
   }
   
   @media (prefers-color-scheme: dark) {
@@ -39,5 +41,6 @@
       --background-gradient-color-2: #007f0c;
       --background-gradient-color-3: #004306;
       --color-heart: #f00;
+      --opacity-background: #000;
     }
   }
