@@ -15,6 +15,7 @@
     --background-image: repeating-linear-gradient(to right, #d3d3d3 0px 2px,transparent 2px 4px),
     repeating-linear-gradient(to bottom, #d3d3d3 0px 2px, transparent 2px 4px),
     linear-gradient(#e7e7e7 0.01%, #1a1a1a);
+    --button-text: #fff;
   }
 
   @media (prefers-color-scheme: light) {
@@ -29,8 +30,10 @@
       --background-image: repeating-linear-gradient(to right, #d3d3d3 0px 2px,transparent 2px 4px),
       repeating-linear-gradient(to bottom, #d3d3d3 0px 2px, transparent 2px 4px),
       linear-gradient(#e7e7e7 0.01%, #1a1a1a);
+      --button-text: #fff;
     }
-  
+  }
+
   :root.theme-dark {
     --font-variation-settings: 465;
     --font-weight: 785;
@@ -42,6 +45,7 @@
     --background-image:   repeating-linear-gradient(to right, #000 0 2px, transparent 2px 4px),
     repeating-linear-gradient(to bottom, #000 0 2px, transparent 2px 4px),
     linear-gradient(to bottom, #007f0c 0.01%, #004306);
+    --button-text: #00CC14;
   }
   
   @media (prefers-color-scheme: dark) {
@@ -56,5 +60,6 @@
       --background-image:   repeating-linear-gradient(to right, #000 0 2px, transparent 2px 4px),
       repeating-linear-gradient(to bottom, #000 0 2px, transparent 2px 4px),
       linear-gradient(to bottom, #007f0c 0.01%, #004306);
+      --button-text: #00CC14;
     }
   }
