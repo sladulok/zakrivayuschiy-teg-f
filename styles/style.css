@@ -21,9 +21,24 @@
   font-variation-settings: "wght" var(--main-weight, 400);
   color: var(--accent-color, #000);
   background-color: var(--background-color, #fff);
-  background-image: var(--background-image, repeating-linear-gradient(to right,#d3d3d3, #d3d3d3 2px,transparent 2px, transparent 4px),
-  repeating-linear-gradient(to bottom,#d3d3d3, #d3d3d3 2px,transparent 2px, transparent 4px),
-  repeating-linear-gradient(#e7e7e7, #1a1a1a));
+  background-image: var(
+    --background-image,
+    repeating-linear-gradient(
+      to right,
+      #d3d3d3,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      #d3d3d3,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    repeating-linear-gradient(#e7e7e7, #1a1a1a)
+  );
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -239,7 +254,7 @@
   transition: border 0.3s ease;
   display: flex;
   align-items: center;
-  background-color: var(--background-color, #FFF);
+  background-color: var(--background-color, #fff);
   outline: 2px solid transparent;
   border: none;
   padding: 0;
