@@ -17,13 +17,13 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  font-family: var(--main-font, 'Inter', sans-serif);
+  font-family: var(--main-font, "Inter", sans-serif);
   font-variation-settings: "wght" var(--main-weight, 400);
-  color: var(--accent-color);
+  color: var(--accent-color, #000);
   background-color: var(--background-color, #fff);
-  background-image: var(--background-image, repeating-linear-gradient(to right, #d3d3d3 0px 2px, transparent 2px 4px),
-  repeating-linear-gradient(to bottom, #d3d3d3 0px 2px, transparent 2px 4px),
-  linear-gradient(#e7e7e7 0.01%, #1a1a1a));
+  background-image: var(--background-image, repeating-linear-gradient(to right,#d3d3d3, #d3d3d3 2px,transparent 2px, transparent 4px),
+  repeating-linear-gradient(to bottom,#d3d3d3, #d3d3d3 2px,transparent 2px, transparent 4px),
+  repeating-linear-gradient(#e7e7e7, #1a1a1a));
   background-size: cover;
 }
 
@@ -133,8 +133,8 @@
   border-block-end: 2px solid var(--accent-color, #000);
   padding: 3px 0 3px 10px;
   line-height: 21.78px;
-  font-family: var(--main-font, 'Inter', sans-serif);
-  font-variation-settings: 'wght' var(--font-weight, 700);
+  font-family: var(--main-font, "Inter", sans-serif);
+  font-variation-settings: "wght" var(--font-weight, 700);
 }
 
 .content__card {
@@ -182,7 +182,7 @@
 
 .button {
   position: relative;
-  background-color: transparent;
+  background-color: var(--background-color, #fff);
   border: 2px solid var(--accent-color, #000);
   cursor: pointer;
   overflow: hidden;
@@ -192,7 +192,7 @@
 
 .button__text {
   font-size: 14px;
-  font-family: var(--accent-font, 'PressStart2P', fantasy);
+  font-family: var(--accent-font, "PressStart2P", fantasy);
   position: relative;
   z-index: 1;
   mix-blend-mode: difference;
@@ -261,13 +261,13 @@
 .subscribe-save-button {
   z-index: 1;
   mix-blend-mode: difference;
+  color: var(--button-text, #fff);
 }
-
 
 @media (width < 376px) {
   .card__save-button {
-      flex-direction: column;
-      min-height: 80px;
+    flex-direction: column;
+    min-height: 80px;
   }
 
   .subscribe-save-button {
@@ -275,7 +275,6 @@
     height: 28px;
   }
 }
-
 
 .subscribe-dialog {
   border: 2px solid var(--accent-color, #000);
@@ -304,7 +303,7 @@
 
 .subscribe-header {
   color: var(--accent-color, #000);
-  font-family: var(--accent-font, 'PressStart2P', fantasy);
+  font-family: var(--accent-font, "PressStart2P", fantasy);
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -321,7 +320,7 @@
 .subscribe-button {
   inline-size: 100%;
   text-transform: uppercase;
-  padding: 12.5px 0;
+  padding: 10.5px 0 7px 0;
 }
 
 .saturate {
