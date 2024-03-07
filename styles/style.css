@@ -23,22 +23,9 @@
   background-color: var(--background-color, #fff);
   background-image: var(
     --background-image,
-    repeating-linear-gradient(
-      to right,
-      #d3d3d3,
-      #d3d3d3 2px,
-      transparent 2px,
-      transparent 4px
-    ),
-    repeating-linear-gradient(
-      to bottom,
-      #d3d3d3,
-      #d3d3d3 2px,
-      transparent 2px,
-      transparent 4px
-    ),
-    repeating-linear-gradient(#e7e7e7, #1a1a1a)
-  );
+    repeating-linear-gradient(to bottom, #d3d3d3 0 2px, transparent 2px 4px),
+    repeating-linear-gradient(to right, #d3d3d3 0 2px, transparent 2px 4px),
+    linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a));
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
