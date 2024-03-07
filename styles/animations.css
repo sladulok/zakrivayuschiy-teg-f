@@ -33,21 +33,25 @@
     }
   }
 
-  .card__icon-button:hover .main-body {
-    fill: var(--accent-color, #000);
-    transition: fill 0.3s linear 0.05s;
+  .like-icon .core {
+    fill: var(--background-color, #FFF);
+    transition: fill 0.3s linear 0.03s;
   }
-
-  .like-icon:active .core {
-    fill: var(--color-heart, #f00);
+  
+  .like-icon .main-body {
+    fill: var(--background-color, #FFF);
     transition: fill 0.3s linear;
   }
   
-  .like-icon:active .main-body {
-    fill: var(--color-heart, #f00);
-    transition: fill 0.3s 0.05s linear;
+  .like-icon .contour {
+    fill: var(--accent-color, #000);
+    transition: fill 0.1s linear;
   }
-
+  
+  .like-icon .heart {
+    transform-origin: center;
+  }
+  
   .like-icon:hover .core {
     fill: var(--accent-color, #000);
     transition: fill 0.3s linear;
@@ -55,22 +59,32 @@
   
   .like-icon:hover .main-body {
     fill: var(--accent-color, #000);
-    transition: fill 0.3s 0.05s linear;
-  }
-
-  .like-icon.is-liked .contour {
-    fill: var(--color-heart, #f00);
-    transition: fill 0.3s 0.06s linear ;
+    transition: fill 0.3s linear 0.05s;
   }
   
-  .like-icon.is-liked .main-body {
-    fill: var(--color-heart, #f00);
+  .like-icon:active .core {
+    fill: var(--color-heart, #FF0000);
     transition: fill 0.3s linear;
+  }
+  
+  .like-icon:active .main-body {
+    fill: var(--color-heart, #FF0000);
+    transition: fill 0.3s linear 0.05s;
   }
   
   .like-icon.is-liked .core {
-    fill: var(--color-heart, #f00);
+    fill: var(--color-heart, #FF0000);
     transition: fill 0.3s linear;
+  }
+  
+  .like-icon.is-liked .main-body {
+    fill: var(--color-heart, #FF0000);
+    transition: fill 0.3s linear 0.05s;
+  }
+  
+  .like-icon.is-liked .contour {
+    fill: var(--color-heart, #FF0000);
+    transition: fill 0.3s linear 0.06s;
   }
   
   .is-liked .heart {
@@ -81,11 +95,6 @@
   .like-icon.is-liked .sparks {
     transform-origin: center;
     animation: sparks 0.3s 0.3s ease-in alternate;
-  }
-
-  .like-icon .contour {
-    fill: var(--accent-color, #000);
-    transition: fill 0.1s linear;
   }
   
   @keyframes fill-animation {

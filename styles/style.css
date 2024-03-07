@@ -25,6 +25,8 @@
   repeating-linear-gradient(to bottom,#d3d3d3, #d3d3d3 2px,transparent 2px, transparent 4px),
   repeating-linear-gradient(#e7e7e7, #1a1a1a));
   background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .header {
@@ -126,13 +128,13 @@
   background-color: var(--background-color, #fff);
   border: 2px solid var(--accent-color, #000);
   font-size: 18px;
+  inline-size: clamp(23.438rem, 30.516vw + 16.285rem, 43.75rem);
 }
 
 .content__header {
   font-size: 18px;
   border-block-end: 2px solid var(--accent-color, #000);
-  padding: 3px 0 3px 10px;
-  line-height: 21.78px;
+  padding: 5px 10px;
   font-family: var(--main-font, "Inter", sans-serif);
   font-variation-settings: "wght" var(--font-weight, 700);
 }
@@ -169,15 +171,17 @@
   display: flex;
   flex-direction: column;
   gap: 27px;
-  padding: 25px 25px 0 25px;
+  padding: 25px;
   border-block-start: 2px solid var(--accent-color, #000);
 }
 
 .content__button {
   display: flex;
   justify-content: flex-end;
-  margin: 25px 25px 25px;
-  gap: 5px;
+  align-items: center;
+  margin-inline-end: 25px;
+  margin-block-end: 25px;
+  gap: 8px;
 }
 
 .button {
@@ -227,13 +231,18 @@
 
 .card__like-button {
   inline-size: 130px;
+  padding: 0;
+  min-height: 38px;
 }
 
 .card__icon-button {
-  background-color: transparent;
-  border: 2px solid transparent;
-  padding: 2px 0 0;
   transition: border 0.3s ease;
+  display: flex;
+  align-items: center;
+  background-color: var(--background-color, #FFF);
+  outline: 2px solid transparent;
+  border: none;
+  padding: 0;
 }
 
 .card__icon-button:focus {
